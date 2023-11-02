@@ -1,0 +1,110 @@
+/* wallet-form-container é o contêiner principal */
+.wallet-form-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+/* Estilização para o título "Wallet" */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+/* Estilização para o contêiner do formulário */
+.form-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilização para campos de entrada e selects */
+.input-field,
+.select-field {
+  flex: 1;
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilização para botão de envio */
+.submit-button,
+.update-button {
+  flex: 1;
+  padding: 10px;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Estilização para botão de envio ativo */
+.submit-button:enabled {
+  background: #00a896;
+}
+
+/* Estilização para botão de envio desativado */
+.submit-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Estilização para botão de atualização */
+.update-button {
+  background: #fbbc05;
+}
+
+@media (max-width: 980px) {
+  .input-field,
+    .select-field {
+      font-size: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .input-field,
+    .select-field {
+      font-size: 8px;
+  }
+}
+
+@media (max-width: 720px) {
+  .form-container {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 653px) {
+  .form-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 430px) {
+  .form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 335px) {
+  .form-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
