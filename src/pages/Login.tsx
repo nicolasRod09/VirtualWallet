@@ -34,7 +34,7 @@ function Login() {
     <div className="login-page">
       <div className="login-container">
         <div className="login-label">
-          <img src="src/imgs/bit-coin.jpg" alt="bit-coins" className="login-img" />
+          <img src="https://uploaddeimagens.com.br/images/004/654/341/full/bit-coin.jpg?1698937071" alt="bit-coins" className="login-img" />
           <form onSubmit={handleSubmit} className="login-form">
             <h1 className="login-h1">Inicie a Sessão</h1>
             <input
